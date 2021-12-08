@@ -28,6 +28,7 @@ body {
   font-family: Public sans sans-serif;
   line-height: 1;
   padding: 2rem;
+  overflow-x: hidden;
 }
 
 .container {
