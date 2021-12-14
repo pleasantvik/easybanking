@@ -12,7 +12,7 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Easybank landing page</title>
+    <title>Easybank landing page | Pleasantvik dev</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,7 +50,9 @@
             <li><a href="#" class="nav-link">Careers</a></li>
           </ul>
         </nav>
-        <div class="link"><a href="#" class="hero-link">Request invite</a></div>
+        <div class="link">
+          <a href="#" class="hero-link cta">Request invite</a>
+        </div>
         <button class="btn-mobile-nav">
           <img
             src="images/icon-hamburger.svg"
@@ -74,7 +76,7 @@
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </p>
-          <a href="#" class="hero-link">Request invite</a>
+          <a href="#" class="hero-link cta">Request invite</a>
         </div>
         <div class="hero-img-box">
           <img
@@ -267,13 +269,65 @@
             <li><a class="footer-link" href="#">Privacy</a></li>
           </ul>
         </div>
+
+        <div class="copyright">
+          <ul class="footer-nav">
+            <li>
+              <a href="#" class="request cta">Request invite</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                >&copy; Easybank. All Rights Reserved</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
+
+    <!-- MODAL WINDOW -->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form" netlify>
+        <label for="first-name">First Name</label>
+        <input
+          type="text"
+          id="first-name"
+          placeholder="John"
+          name="first-name"
+          required
+        />
+        <label for="last-name">Last Name</label>
+        <input
+          type="text"
+          id="last-name"
+          placeholder="Doe"
+          name="last-name"
+          required
+        />
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="me@example.com"
+          name="email"
+          required
+        />
+        <button class="btn request">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="https://www.twitter.com/pleasantvik">Adedayo Ayoola</a>.
+      >. Coded by
+      <a href="https://www.twitter.com/pleasantvik">Adedayo Ayoola</a>.
     </div>
   </body>
 </html>
